@@ -1,0 +1,12 @@
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: custom-global-labels
+labels:
+  app.kubernetes.io/version: "develop-24bc07f"
+  app.kubernetes.io/component: server
+  app.kubernetes.io/part-of: demo
+  app.kubernetes.io/managed-by: kustomize
+fieldSpecs:
+- path: metadata/labels
+  create: true

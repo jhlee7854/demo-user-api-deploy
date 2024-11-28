@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-user-api
+spec:
+  template:
+    spec:
+      containers:
+      - name: demo-user-api
+        # resources:
+        #   requests:
+        #     memory: "128Mi"
+        #     cpu: "128m"
+        #   limits:
+        #     memory: "512Mi"
+        #     cpu: "256m"
